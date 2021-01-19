@@ -1,7 +1,7 @@
-package com.wisekrakr.vote4stuff.entities.embedded;
+package com.wisekrakr.vote4stuff.app.entities.embedded;
 
-import com.wisekrakr.vote4stuff.entities.Product;
-import com.wisekrakr.vote4stuff.entities.User;
+import com.wisekrakr.vote4stuff.app.entities.ShowCase;
+import com.wisekrakr.vote4stuff.app.entities.User;
 
 import javax.persistence.Embeddable;
 import javax.persistence.ManyToOne;
@@ -12,7 +12,7 @@ public class VoteId implements Serializable {
 
     private static final long serialVersionUID = -4528914813559210916L;
     private User user;
-    private Product product;
+    private ShowCase showCase;
 
     @ManyToOne
     public User getUser() {
@@ -24,11 +24,11 @@ public class VoteId implements Serializable {
     }
 
     @ManyToOne
-    public Product getProduct() {
-        return product;
+    public ShowCase getShowCase() {
+        return showCase;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setShowCase(ShowCase showCase) {
+        this.showCase = showCase;
     }
 }

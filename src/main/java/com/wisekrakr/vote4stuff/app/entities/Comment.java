@@ -1,6 +1,6 @@
-package com.wisekrakr.vote4stuff.entities;
+package com.wisekrakr.vote4stuff.app.entities;
 
-import com.wisekrakr.vote4stuff.entities.embedded.CommentId;
+import com.wisekrakr.vote4stuff.app.entities.embedded.CommentId;
 
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;

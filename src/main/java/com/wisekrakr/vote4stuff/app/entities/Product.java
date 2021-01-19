@@ -1,4 +1,4 @@
-package com.wisekrakr.vote4stuff.entities;
+package com.wisekrakr.vote4stuff.app.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,7 +7,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Product {
-    private int id;
+    private Integer id;
     private String title;
     private String description;
     private String status;
@@ -15,11 +15,11 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

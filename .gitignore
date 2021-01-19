@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Manually added ###
+/src/main/resources/application.properties
+/src/main/java/com/wisekrakr/vote4stuff/util/Constants.java
